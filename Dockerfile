@@ -5,7 +5,8 @@ RUN          apt-get update && apt-get -y install \
              daemontools \
              python-pip \
              build-essential \
-             python-dev && \
+             python-dev \
+             lzop && \
              pip install wal-e 
 
 COPY         wale.sh /docker-entrypoint-initdb.d/wale.sh
